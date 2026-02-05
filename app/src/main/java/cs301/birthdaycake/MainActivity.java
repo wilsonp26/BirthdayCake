@@ -4,7 +4,7 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-
+import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
 
         myCtrl = new CakeController(findViewById(R.id.cakeview));
 
+        //register the controller as blowOut button listener
+        Button blowOut = findViewById(R.id.button);
+        blowOut.setOnClickListener(myCtrl);
     }
 
     public void goodbye(View button) {

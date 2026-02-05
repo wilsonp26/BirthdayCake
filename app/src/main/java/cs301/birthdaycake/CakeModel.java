@@ -13,4 +13,8 @@ public class CakeModel {
         frosting = true;
         candles = true;
     }
+
+    public void setCandleLit(){
+        candleLit = false;
+    }
 }
